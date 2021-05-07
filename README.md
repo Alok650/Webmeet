@@ -9,9 +9,10 @@
 > UI Design
 
 <img src = "https://www.linkpicture.com/q/webmeet_1.jpg" width="300" height = "100">
-<img src = "https://www.linkpicture.com/q/demo_3.jpg" width="400" height = "200">
+<img src = "https://www.linkpicture.com/q/demo_3.jpg" width="600" height = "400">
 
 ## Installation
+
 In the project directory, you can run:
 
 ### `npm start`
@@ -21,6 +22,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-
-
