@@ -9,11 +9,8 @@
 > UI Design
 
 <img src = "https://www.linkpicture.com/q/webmeet_1.jpg" width="300" height = "100">
-<<<<<<< HEAD
+
 <img src = "https://www.linkpicture.com/q/demo_3.jpg" width="800" height = "500">
-=======
-<img src = "https://www.linkpicture.com/q/demo_3.jpg" width="800" height = "480">
->>>>>>> 3b2f627cd58805f231c79da3b8da1a0f9de405f6
 
 ## Installation
 
