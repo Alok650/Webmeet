@@ -5,11 +5,11 @@ import DonutLargeIcon from '@material-ui/icons/DonutLarge';
 import ChatIcon from '@material-ui/icons/Chat';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import SearchIcon from '@material-ui/icons/Search';
-import SidebarChat from './SidebarChat';
-import db from './../Firebase';
+import SidebarChat from './../SidebarChat/SidebarChat';
+import db from './../../Firebase';
 import AddIcon from '@material-ui/icons/Add';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import { useStateValue } from './../StateProvider';
+import { useStateValue } from './../../StateProvider';
 
 function Sidebar() {
 

@@ -8,10 +8,10 @@ import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import MicIcon from '@material-ui/icons/Mic';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import { useParams } from 'react-router-dom';
-import db from './../Firebase';
-import { useStateValue } from './../StateProvider';
+import db from './../../Firebase';
+import { useStateValue } from './../../StateProvider';
 import firebase from "firebase";
-import sendMessageAudio from './../audio1.mp3';
+import sendMessageAudio from './../../audio1.mp3';
 
 function Chat() {
 
@@ -56,6 +56,7 @@ function Chat() {
         var audio = new Audio(sendMessageAudio);
         audio.play();
     }
+
 
     return (
         <div className="chat">
