@@ -1,4 +1,4 @@
-import { Avatar, IconButton } from '@material-ui/core';
+import { Avatar, IconButton} from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import './Chat.css';
 import SearchIcon from '@material-ui/icons/Search';
@@ -6,10 +6,12 @@ import AttachFileIcon from '@material-ui/icons/AttachFile';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import MicIcon from '@material-ui/icons/Mic';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import { useParams } from 'react-router-dom';
 import db from './../Firebase';
 import { useStateValue } from './../StateProvider';
 import firebase from "firebase";
+import sendMessageAudio from './../audio1.mp3';
 
 function Chat() {
 
@@ -50,6 +52,9 @@ function Chat() {
         })
 
         setInput('');
+
+        var audio = new Audio(sendMessageAudio);
+        audio.play();
     }
 
     return (
@@ -66,7 +71,6 @@ function Chat() {
                 </div>
                 <div className="chat_headerRight">
                     <IconButton><SearchIcon /></IconButton>
-                    <IconButton><AttachFileIcon /></IconButton>
                     <IconButton><MoreVertIcon /></IconButton>
                 </div>
             </div>
@@ -83,6 +87,7 @@ function Chat() {
             </div>
             <div className="chat_footer">
                 <IconButton><InsertEmoticonIcon /></IconButton>
+                <IconButton><AttachFileIcon /></IconButton>
                 <form>
                     <input value={input} onChange={(e) => setInput(e.target.value)} type="text" placeholder="Type a message" />
                     <button onClick={sendMessage} type="submit" >Send a message</button>

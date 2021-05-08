@@ -8,6 +8,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import SidebarChat from './SidebarChat';
 import db from './../Firebase';
 import AddIcon from '@material-ui/icons/Add';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import { useStateValue } from './../StateProvider';
 
 function Sidebar() {
@@ -34,8 +35,10 @@ function Sidebar() {
                 <div className="sidebar_headerRight">
                     <IconButton><DonutLargeIcon /></IconButton>
                     <IconButton><ChatIcon /></IconButton>
+                    <IconButton><ExitToAppIcon onClick={(e) => {
+                                                e.preventDefault();
+                                                window.location.href='';}}/></IconButton>
                     <IconButton><MoreVertIcon /></IconButton>
-
                 </div>
             </div>
             <div className="sidebar_search">
