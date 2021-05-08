@@ -4,7 +4,7 @@
 
 > Web chatting application with google authentication. Design inspired from WhatsApp.
 
-## Code Samples
+## Preview
 
 > UI Design
 
